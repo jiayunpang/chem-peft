@@ -1,0 +1,22 @@
+#!/bin/bash
+python peft_byt5_infer.py \
+--adapter_path "output/byt5-small-lora-finetuned-ch-functionalisation-adapter/" \
+--model_path "base-model/byt5-small-finetuned-uspto-1k-tpl-chemical-reactions/" \
+--print_predictions \
+--test_path "data/ch_test_prod.csv" \
+--seed 42 \
+--smiles_check "no" \
+--infer_batch 32 \
+--max_new_tokens 160 \
+--max_length 344 \
+--num_return_sequences 5 \
+--num_beams 5 \
+--num_beam_groups 1 \
+--top_k 10 \
+--top_p 0.8 \
+--penalty_alpha 0.6 \
+--diversity_penalty 1.0 \
+--length_penalty 4 \
+--temperature 1.0 \
+--tokenization "none" \
+--infer_mode "search_beam"
