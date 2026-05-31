@@ -33,7 +33,7 @@ Three models are provided on huggingfacec https://huggingface.co/JiayunPang
 • byt5-small-full-finetuned-ch-functionalisation/ - This is the task-specific full-finetuning model using the C-H dataset (from the base modeL byt5-small-finetuned-uspto-1k-tpl-chemical-reactions/). To run inference of the C-H functionalisation, you will need the run script run_byt5_full_finetune_infer.py. For example:
 
 python byt5_full_finetune_infer.py --model_path "output/byt5-small-full-finetuned-ch-functionalisation/" --test_path "data/test_prod.csv" ...
-You can replace ch_test_prod.csv with uspto_tpl_prod_test_prefix_c1.csv to test how much knowledge the model retains in this specific class from USPTP.  
+You can replace ch_test_prod.csv with uspto_tpl_prod_test_prefix_c1.csv to test how much knowledge the model retains in this specific class from USPTo.  
 
 • byt5-small-lora-finetuned-ch-functionalisation-adapter/ - This is the task-specific LoRA fine-tuning adapter using the C-H dataset. To run inference of the C-H functionalisation, you will need to load the base model + the LoRA adapter, for example:
 
