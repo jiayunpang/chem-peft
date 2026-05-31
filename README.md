@@ -15,6 +15,12 @@ https://huggingface.co/docs/transformers/en/main_classes/trainer
 https://huggingface.co/docs/transformers/v4.41.1/en/main_classes/trainer#transformers.Seq2SeqTrainingArguments
 https://huggingface.co/docs/diffusers/training/lora
 
+The reference below provided a few sets of hyperparameters that we have explored. For the LoRA adapter deposited in Huggingface, the following parameters were used
+  "lora_alpha": 32,
+  "lora_r": 16,
+  "lora_dropout": 0.0,
+  "learning_rate": 0.01
+
 ### Inference
 The running bash script is run_peft_byt5_infer.sh which calls the actual Python code/script peft_byt5_infer.py. You can run the script by simply executing bash run_peft_t5_infer.sh.
 
